@@ -1,17 +1,28 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld :msg="msg"/>
+    <AppTittle :tittle="tittle"/>
+    <AppDescription :description="description"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue';
+import AppTittle from './components/AppTittle.vue';
+import AppDescription from './components/AppDescription.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld, AppTittle, AppDescription,
+  },
+  data() {
+    return {
+      msg:"Esta es mi primera app con Vue CLI",
+      tittle:"Bienvenidos",
+      description:"Estamos trabajando con componentes."
+    }
   }
 }
 </script>

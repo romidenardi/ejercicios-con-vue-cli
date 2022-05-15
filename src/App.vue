@@ -21,7 +21,7 @@ export default {
         return {
             msg:"Esta es mi primera app con Vue CLI",
             tittle:"Bienvenidos",
-            description:"Estamos trabajando con componentes."
+            description:"Estamos trabajando con componentes de Vue CLI."
         }
     }
 }
